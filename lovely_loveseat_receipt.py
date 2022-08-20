@@ -8,10 +8,14 @@ sales_tax=0.088
 customer_one_total=0
 customer_one_itemization=""
 customer_one_total+=lovely_loveseat_price
-customer_one_itemization+=lovely_loveseat_description
+customer_one_itemization+="\n"+lovely_loveseat_description
 customer_one_total+=stylish_settee_price
-customer_one_itemization+=stylish_settee_description
+customer_one_itemization+="\n\n"+stylish_settee_description
 customer_one_total+=luxurious_lamp_price
-customer_one_itemization+=luxurious_lamp_description
+customer_one_itemization+="\n\n"+luxurious_lamp_description
 customer_one_tax=customer_one_total*sales_tax
-customer_one_total
+customer_one_total+=customer_one_tax
+print("Customer One Items:")
+print(customer_one_itemization + "\n")
+print("Customer One Total:")
+print("$",customer_one_total)
