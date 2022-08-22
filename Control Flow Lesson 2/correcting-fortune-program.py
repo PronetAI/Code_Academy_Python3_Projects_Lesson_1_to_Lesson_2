@@ -1,9 +1,6 @@
 # Fortune Cookie Program 🥠
-
 import random
-
 fortune = random.randint(0, 4)
-
 if fortune == 0:
   print("May you one day be carbon neutral")
 elif fortune == 1:  
